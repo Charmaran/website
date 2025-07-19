@@ -256,8 +256,8 @@ main {
 }
 
 .services-banner {
-    background: linear-gradient(135deg, var(--charmaran-gray), #e0e0e0);
-    color: var(--charmaran-brown);
+    background: var(--charmaran-brown);
+    color: white;
     padding: 1.5rem;
     border-radius: 8px;
     text-align: center;

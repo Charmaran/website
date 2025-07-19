@@ -256,15 +256,27 @@ main {
 }
 
 .services-banner {
-    background: linear-gradient(135deg, var(--charmaran-gray), #e0e0e0);
-    color: var(--charmaran-brown);
+    background: linear-gradient(135deg, var(--charmaran-dark-brown), var(--charmaran-brown));
+    color: white;
     padding: 1.5rem;
     border-radius: 8px;
     text-align: center;
     font-weight: bold;
     font-size: 0.9rem;
     margin: 2rem 0;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.services-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('data:image/svg+xml,<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h20v20H0z" fill="none"/><path d="M2 2h2v2H2zM6 6h2v2H6zM10 10h2v2h-2zM14 14h2v2h-2zM18 18h2v2h-2z" fill="rgba(255,255,255,0.05)"/></svg>') repeat;
+    opacity: 0.1;
 }
 
 .content-image {

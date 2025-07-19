@@ -34,13 +34,17 @@ main {
 }
 
 .top-header a {
-    color: white;
-    text-decoration: none;
+    color: white !important;
+    text-decoration: none !important;
     transition: opacity 0.2s;
     font-size: 0.95rem;
 }
 
-.top-header a:hover {
+.top-header a:hover,
+.top-header a:visited,
+.top-header a:active {
+    color: white !important;
+    text-decoration: none !important;
     opacity: 0.8;
 }
 
@@ -332,19 +336,19 @@ footer::before {
 
 /* Legacy Styles */
 /* Modern link styles that work with Bootstrap */
-a:link {
+a:link:not(.top-header a) {
 	color: #773B44;
 	text-decoration: none;
 	}
-a:visited { 
+a:visited:not(.top-header a) { 
 	color: #773B44;
 	text-decoration: none; 
 	}
-a:hover {
+a:hover:not(.top-header a) {
 	color: #E40A0C;
 	text-decoration: underline;
 	}
-a:active { 
+a:active:not(.top-header a) { 
 	color: #E40A0C;
 	text-decoration: none; 
 	}

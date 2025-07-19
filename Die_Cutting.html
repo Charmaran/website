@@ -9,148 +9,40 @@
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="style.css" rel="stylesheet">
-    
-    <style>
-        :root {
-            --charmaran-red: #E40A0C;
-            --charmaran-brown: #4e2d2c;
-            --charmaran-dark-brown: #773B44;
-            --charmaran-gray: #C0C0C0;
-            --charmaran-text: #373737;
-        }
-        
-        body {
-            color: var(--charmaran-text);
-            font-family: Arial, sans-serif;
-        }
-        
-        .navbar-brand img {
-            height: 60px;
-        }
-        
-        .hero-section {
-            background-color: #f8f9fa;
-            padding: 2rem 0;
-        }
-        
-        .tagline-bar {
-            background-color: var(--charmaran-gray);
-            color: var(--charmaran-brown);
-            padding: 0.5rem 0;
-            font-weight: bold;
-        }
-        
-        .service-nav {
-            background-color: #f8f9fa;
-            padding: 1rem 0;
-            border-bottom: 1px solid #dee2e6;
-        }
-        
-        .service-nav a {
-            color: var(--charmaran-dark-brown);
-            text-decoration: none;
-            font-weight: bold;
-            margin-right: 1rem;
-        }
-        
-        .service-nav a:hover {
-            color: var(--charmaran-red);
-        }
-        
-        .service-nav a.active {
-            color: var(--charmaran-red);
-        }
-        
-        .contact-info {
-            background-color: #f8f9fa;
-            border-radius: 8px;
-            padding: 1.5rem;
-        }
-        
-        .contact-phone {
-            color: var(--charmaran-red);
-            font-weight: bold;
-            font-size: 1.1rem;
-        }
-        
-        .section-title {
-            color: var(--charmaran-red);
-            font-weight: bold;
-            border-bottom: 2px solid var(--charmaran-red);
-            padding-bottom: 0.5rem;
-            margin-bottom: 1rem;
-        }
-        
-        .capability-list {
-            list-style: none;
-            padding-left: 0;
-        }
-        
-        .capability-list li {
-            padding: 0.25rem 0;
-            color: var(--charmaran-brown);
-        }
-        
-        .capability-list li:before {
-            content: "• ";
-            color: var(--charmaran-red);
-            font-weight: bold;
-            margin-right: 0.5rem;
-        }
-        
-        .highlight-text {
-            color: var(--charmaran-red);
-            font-weight: bold;
-            font-style: italic;
-            text-align: center;
-            padding: 1rem;
-            background-color: #f8f9fa;
-            border-radius: 8px;
-            margin: 1rem 0;
-        }
-        
-        .experience-badge {
-            background-color: var(--charmaran-gray);
-            color: var(--charmaran-brown);
-            padding: 0.5rem 1rem;
-            border-radius: 8px;
-            font-weight: bold;
-            text-align: center;
-            margin-bottom: 1rem;
-        }
-        
-        .services-banner {
-            background-color: #f8f9fa;
-            padding: 1rem;
-            border-radius: 8px;
-            text-align: center;
-            font-weight: bold;
-            font-size: 0.9rem;
-            margin: 1rem 0;
-        }
-        
-        footer {
-            background-color: #f8f9fa;
-            border-top: 1px solid #dee2e6;
-            margin-top: 3rem;
-            padding: 1rem 0;
-        }
-    </style>
+    <link href="./styles/die-cutting.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <!-- Top Header -->
+    <div class="top-header">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="images/clogo-2.jpg" alt="Charmaran Company Logo" class="img-fluid">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="company-header">
+                        <div class="company-header-logo">CHARMARAN COMPANY</div>
+                        <div class="company-header-subtitle">Die Cutting Services</div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="top-header-contact">
+                        <span><i class="fas fa-phone"></i> (260) 347-3325</span>
+                        <a href="mailto:info@charmaran.com"><i class="fas fa-envelope"></i> Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
@@ -158,101 +50,77 @@
                         <a class="nav-link" href="Metal_Stampings.html">Metal Stamping</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Non-Metal_Stamping.htm">Non-Metal Stampings</a>
+                        <a class="nav-link" href="Non-Metal_Stamping.html">Non-Metal Stampings</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="Die_Cutting.html">Die Cutting</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="equipment.htm">Equipment</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero-section">
+    <main>
+    <!-- Page Header Section -->
+    <section class="page-header-section">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-8">
-                    <img src="images/logotop1.jpg" alt="Charmaran Company" class="img-fluid mb-3">
-                    <h1 class="h4 text-muted mb-0">Since 1970, Charmaran has provided quality stamping!</h1>
+                <div class="col-lg-7">
+                    <h1 class="page-title mb-3">Die Cutting</h1>
+                    <p class="page-subtitle">From prototype to production - precision die cutting services since 1970</p>
                 </div>
-                <div class="col-lg-4">
-                    <div class="contact-info">
-                        <h3 class="h5 text-primary mb-3">Contact Charmaran Today</h3>
-                        <address class="mb-2">
-                            <strong>1451 Stonebraker Drive</strong><br>
+                <div class="col-lg-5">
+                    <div class="contact-badge">
+                        <h3 class="h5 text-white mb-3">Contact Us Today</h3>
+                        <address class="mb-3 text-white-50">
+                            <strong class="text-white">1451 Stonebraker Drive</strong><br>
                             Kendallville, Indiana 46755
                         </address>
-                        <p class="contact-phone mb-1">(260) 347-3325</p>
-                        <p class="text-muted mb-0">FAX: (260) 347-3449</p>
+                        <div class="contact-info-group">
+                            <p class="contact-phone mb-1">(260) 347-3325</p>
+                            <p class="text-white-50 mb-2">FAX: (260) 347-3449</p>
+                            <p class="contact-email mb-0">
+                                <span class="text-white">info@charmaran.com</span>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Tagline Bar -->
-    <div class="tagline-bar text-center">
-        <div class="container">
-            ...on time and at reasonable prices.
-        </div>
-    </div>
-
-    <!-- Service Navigation -->
-    <div class="service-nav">
+    <!-- Main Content -->
+    <div class="content-section">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <div class="experience-badge">
-                        Let Our 50+ Years of Experience Help You!
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="d-flex flex-wrap">
-                        <a href="index.html">Home</a>
-                        <a href="Metal_Stampings.html">Metal Stamping</a>
-                        <a href="Non-Metal_Stamping.htm">Non-Metal Stampings</a>
-                        <a href="Die_Cutting.html" class="active">Die Cutting</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Main Content -->
-    <div class="container my-5">
-        <div class="row">
-            <!-- Left Column -->
-            <div class="col-lg-8">
-                <div class="row">
-                    <div class="col-md-6">
-                        <img src="images/diecut1.jpg" alt="Die Cutting" class="img-fluid mb-3">
-                        <h2 class="h4 text-danger mb-3">From Prototype to Production</h2>
-                        
-                        <p class="mb-3">
-                            <strong>Charmaran provides modern high-speed equipment, technical expertise, exceptional quality, fast turnaround, low prices and in-stock materials.</strong>
-                        </p>
-                        
-                        <div class="highlight-text">
-                            Quality Parts On Time
+                <!-- Left Column -->
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="images/diecut1.jpg" alt="Die Cutting" class="img-fluid content-image">
+                            <h2 class="section-title">From Prototype to Production</h2>
+                            
+                            <p class="mb-3">
+                                <strong>Charmaran provides modern high-speed equipment, technical expertise, exceptional quality, fast turnaround, low prices and in-stock materials.</strong>
+                            </p>
+                            
+                            <div class="highlight-text">
+                                Quality Parts On Time
+                            </div>
+                            
+                            <p class="mb-4">
+                                <strong>Fax us your requirements (260) 347-3449</strong>
+                            </p>
+                            
+                            <div class="services-banner">
+                                FABRICATION • STAMPING • SPECIALTY OEM CONTRACT MANUFACTURING • KISS CUTTING • LAMINATING • SLITTING • PROTOTYPE OR EARLY DESIGN TO HIGH VOLUME PRODUCTION
+                            </div>
                         </div>
                         
-                        <p class="mb-4">
-                            <strong>Fax us your requirements (260) 347-3449</strong>
-                        </p>
-                        
-                        <div class="services-banner">
-                            FABRICATION • STAMPING • SPECIALTY OEM CONTRACT MANUFACTURING • KISS CUTTING • LAMINATING • SLITTING • PROTOTYPE OR EARLY DESIGN TO HIGH VOLUME PRODUCTION
+                        <div class="col-md-6">
+                            <img src="images/press.gif" alt="Die Cutting Equipment" class="img-fluid content-image">
                         </div>
                     </div>
-                    
-                    <div class="col-md-6">
-                        <img src="images/press.gif" alt="Die Cutting Equipment" class="img-fluid mb-3">
-                    </div>
-                </div>
                 
                 <div class="row mt-4">
                     <div class="col-md-6">
@@ -303,7 +171,7 @@
                         </ul>
                         
                         <div class="mt-3">
-                            <img src="images/metals.jpg" alt="Materials" class="img-fluid">
+                            <img src="images/metals.jpg" alt="Materials" class="img-fluid content-image">
                         </div>
                     </div>
                 </div>
@@ -311,25 +179,33 @@
             
             <!-- Right Column - Contact Info -->
             <div class="col-lg-4">
-                <div class="contact-info sticky-top">
-                    <h3 class="h5 text-primary mb-3">Contact Charmaran Today</h3>
-                    <address class="mb-2">
-                        <strong>1451 Stonebraker Drive</strong><br>
+                <div class="contact-badge sticky-top">
+                    <h3 class="h5 text-white mb-3">Contact Charmaran Today</h3>
+                    <address class="mb-3 text-white-50">
+                        <strong class="text-white">1451 Stonebraker Drive</strong><br>
                         Kendallville, Indiana 46755
                     </address>
-                    <p class="contact-phone mb-1">(260) 347-3325</p>
-                    <p class="text-muted mb-0">FAX: (260) 347-3449</p>
+                    <div class="contact-info-group">
+                        <p class="contact-phone mb-1">(260) 347-3325</p>
+                        <p class="text-white-50 mb-2">FAX: (260) 347-3449</p>
+                        <p class="contact-email mb-0">
+                            <span class="text-white">info@charmaran.com</span>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    </main>
 
     <!-- Footer -->
-    <footer class="text-center text-muted">
+    <footer>
         <div class="container">
-            <p class="mb-0">
-                <small>© All Rights Reserved 2019 - Charmaran Company</small>
-            </p>
+            <div class="footer-content text-center">
+                <p class="mb-0">
+                    <small>© All Rights Reserved 2019 - Charmaran Company</small>
+                </p>
+            </div>
         </div>
     </footer>
 

@@ -5,20 +5,21 @@
 
 /* --- CSS Custom Properties --- */
 :root {
-  /* Colors */
-  --color-primary: #1B2A4A;
-  --color-primary-light: #2A3F6B;
+  /* Colors — Cyan/Teal palette matching Charmaran logo */
+  --color-primary: #00838F;
+  --color-primary-light: #00ACC1;
+  --color-brand: #00BCD4;
   --color-accent: #C8102E;
   --color-accent-hover: #A00D24;
-  --color-secondary: #773B44;
+  --color-secondary: #004D56;
   --color-text: #2D3748;
   --color-text-light: #5A6577;
-  --color-heading: #1B2A4A;
+  --color-heading: #004D56;
   --color-white: #FFFFFF;
-  --color-light-bg: #F7F8FA;
-  --color-border: #E2E6EC;
-  --color-dark-bg: #1B2A4A;
-  --color-dark-text: #CBD5E0;
+  --color-light-bg: #F0FAFB;
+  --color-border: #D4EEF1;
+  --color-dark-bg: #004D56;
+  --color-dark-text: #B2EBF2;
   --color-silver: #C0C0C0;
 
   /* Typography */
@@ -199,8 +200,9 @@ p {
 }
 
 .nav__brand img {
-  height: 48px;
+  height: 44px;
   width: auto;
+  border-radius: 4px;
 }
 
 .nav__brand-text {
@@ -240,8 +242,8 @@ p {
 
 .nav__link:hover,
 .nav__link--active {
-  color: var(--color-accent);
-  background: rgba(200, 16, 46, 0.06);
+  color: var(--color-primary);
+  background: rgba(0, 188, 212, 0.08);
 }
 
 /* Services dropdown */
@@ -379,7 +381,7 @@ p {
    HERO SECTION
    ============================================================ */
 .hero {
-  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+  background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-primary) 50%, var(--color-brand) 100%);
   color: var(--color-white);
   padding: var(--space-20) 0;
   text-align: center;
@@ -394,7 +396,7 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="white" stroke-width="0.2" opacity="0.05"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="white" stroke-width="0.2" opacity="0.06"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
   pointer-events: none;
 }
 
@@ -562,8 +564,8 @@ p {
 .card__icon {
   width: 56px;
   height: 56px;
-  background: rgba(200, 16, 46, 0.08);
-  color: var(--color-accent);
+  background: rgba(0, 188, 212, 0.1);
+  color: var(--color-primary);
   border-radius: var(--border-radius);
   display: flex;
   align-items: center;
@@ -626,7 +628,7 @@ p {
 .stat__number {
   font-size: var(--font-size-3xl);
   font-weight: 800;
-  color: var(--color-accent);
+  color: #00E5FF;
   line-height: 1.2;
   margin-bottom: var(--space-1);
 }
@@ -663,16 +665,16 @@ p {
 }
 
 .tag:hover {
-  border-color: var(--color-accent);
-  color: var(--color-accent);
-  background: rgba(200, 16, 46, 0.04);
+  border-color: var(--color-brand);
+  color: var(--color-primary);
+  background: rgba(0, 188, 212, 0.06);
 }
 
 /* ============================================================
    CTA BANNER
    ============================================================ */
 .cta-banner {
-  background: linear-gradient(135deg, var(--color-accent) 0%, #8B0A1E 100%);
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
   color: var(--color-white);
   padding: var(--space-16) 0;
   text-align: center;
@@ -720,7 +722,7 @@ p {
 .content-block h3 {
   margin-bottom: var(--space-4);
   padding-bottom: var(--space-3);
-  border-bottom: 2px solid var(--color-accent);
+  border-bottom: 2px solid var(--color-brand);
   display: inline-block;
 }
 
@@ -757,7 +759,7 @@ p {
 
 .feature-list__item::before {
   content: '\2713';
-  color: var(--color-accent);
+  color: var(--color-brand);
   font-weight: 700;
   flex-shrink: 0;
   margin-top: 1px;
@@ -919,8 +921,8 @@ p {
 .contact-info__icon {
   width: 40px;
   height: 40px;
-  background: rgba(200, 16, 46, 0.08);
-  color: var(--color-accent);
+  background: rgba(0, 188, 212, 0.1);
+  color: var(--color-primary);
   border-radius: var(--border-radius);
   display: flex;
   align-items: center;

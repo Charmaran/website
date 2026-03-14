@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Charmaran Company | Company Profile &amp; History</title>
+  <meta name="description" content="Learn about Charmaran Company, a precision metal stamping and die cutting manufacturer in Kendallville, Indiana. Serving 175+ accounts in 28 states since 1970 from our 30,000 sq ft facility.">
+  <meta name="keywords" content="Charmaran Company, company profile, metal stamping manufacturer, Kendallville Indiana, tool and die, company history, manufacturing facility">
+  <meta property="og:title" content="About Charmaran Company | Company Profile &amp; History">
+  <meta property="og:description" content="Since 1970, Charmaran Company has provided precision metal stamping, non-metal stamping, and die cutting from Kendallville, Indiana.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- ========== HEADER / NAVIGATION ========== -->
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html" class="nav__brand">
+        <img src="images/charmaran-logo.svg" alt="The Charmaran Company Logo">
+      </a>
+      <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false" onclick="document.querySelector('.nav__links').classList.toggle('nav__links--open'); this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') === 'false' ? 'true' : 'false');">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav__links">
+        <a href="index.html" class="nav__link">Home</a>
+        <div class="nav__dropdown">
+          <span class="nav__link nav__dropdown-toggle" onclick="this.parentElement.classList.toggle('open')">Services</span>
+          <div class="nav__dropdown-menu">
+            <a href="metal-stamping.html" class="nav__dropdown-item">Metal Stamping</a>
+            <a href="non-metal-stamping.html" class="nav__dropdown-item">Non-Metal Stamping</a>
+            <a href="die-cutting.html" class="nav__dropdown-item">Die Cutting</a>
+          </div>
+        </div>
+        <a href="about.html" class="nav__link nav__link--active">About</a>
+        <a href="equipment.html" class="nav__link">Equipment</a>
+        <a href="contact.html" class="nav__link">Contact</a>
+        <a href="quote.html" class="btn btn--primary nav__cta">Request a Quote</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ========== PAGE HERO ========== -->
+    <section class="hero hero--page">
+      <div class="container">
+        <h1>About Charmaran Company</h1>
+        <p class="hero__subtitle">A full-service stamping house serving customers across North America since 1970.</p>
+      </div>
+    </section>
+
+    <!-- ========== COMPANY HISTORY ========== -->
+    <section class="section">
+      <div class="container">
+        <div class="content-block">
+          <h2>Our History</h2>
+          <p>Acquired in 1990 by the Charmaran Company, K &amp; L Stamping began operations in 1976 as a supplier of die cut insulation parts exclusively for Sears &amp; Belding, a major appliance manufacturer. K &amp; L also specialized in the production of stampings from vulcanized fiber, insulation papers, phenolics, and other nonmetal materials for the appliance industry. Charmaran changed the name but retained the K &amp; L tradition of producing quality parts at competitive prices.</p>
+          <p>Expansion in 1991 added two distinct product lines. One line manufactures precision roll formed motor mounting rings for appliance motors; the other produces locking devices for fiber drum containers. The metal rings increased product offerings to the appliances market and the locking devices offered new opportunity in the fiber drum market.</p>
+          <p>Capitalizing on K &amp; L's reputation for excellence, Charmaran added larger tonnage presses and additional plant capacity. Specialized services were also added to make Charmaran a one-stop stamping house. These include product engineering, tool and die design capabilities, prototypes, steel rule die cutting, and value added secondary operations requiring welding and riveting, as well as material specification and selection.</p>
+          <p>With more than 1,000 stock die sets, Charmaran also has the capability to offer material stocking programs for J.I.T. vendors. No run is too small or too large. We process orders from as few as 50 pieces to runs over a million pieces. Whatever the size of your order, you can depend on Charmaran to produce custom stampings quickly, efficiently, and competitively.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== BY THE NUMBERS ========== -->
+    <section class="section section--dark">
+      <div class="container">
+        <div class="section__header">
+          <h2>By the Numbers</h2>
+        </div>
+        <div class="stats-grid">
+          <div class="stat">
+            <div class="stat__number">55+</div>
+            <div class="stat__label">Years in Business</div>
+          </div>
+          <div class="stat">
+            <div class="stat__number">175+</div>
+            <div class="stat__label">Customer Accounts</div>
+          </div>
+          <div class="stat">
+            <div class="stat__number">28</div>
+            <div class="stat__label">States Served</div>
+          </div>
+          <div class="stat">
+            <div class="stat__number">30K</div>
+            <div class="stat__label">Sq Ft Facility</div>
+          </div>
+          <div class="stat">
+            <div class="stat__number">1,000+</div>
+            <div class="stat__label">Stock Die Sets</div>
+          </div>
+          <div class="stat">
+            <div class="stat__number">25</div>
+            <div class="stat__label">Presses</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CERTIFICATIONS & CUSTOMERS ========== -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="card-grid card-grid--2">
+          <div class="content-block">
+            <h3>Certifications &amp; Quality</h3>
+            <ul class="feature-list">
+              <li class="feature-list__item">SPC/MIL-I-45208A Certified</li>
+              <li class="feature-list__item">Lot Traceability &amp; Certifications</li>
+              <li class="feature-list__item">In-House Quality Control</li>
+              <li class="feature-list__item">Precision Measurement Equipment</li>
+            </ul>
+          </div>
+          <div class="content-block">
+            <h3>Certified Supplier To</h3>
+            <ul class="feature-list">
+              <li class="feature-list__item">General Electric Motors Division</li>
+              <li class="feature-list__item">Emerson Specialty Motor Division</li>
+              <li class="feature-list__item">Hughes Defense Communications</li>
+              <li class="feature-list__item">Many other customers throughout North America</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== LOCATION & SHIPPING ========== -->
+    <section class="section">
+      <div class="container">
+        <div class="content-two-col">
+          <div class="content-block">
+            <h2>Location &amp; Shipping</h2>
+            <p>Charmaran operates from a 30,000 square-foot facility in Kendallville, Indiana. This central location &mdash; near the intersection of I-69 and I-80/90 &mdash; provides access to daily UPS as well as all commercial truck lines and air lines servicing the Midwest.</p>
+            <p>You can depend on Charmaran to meet delivery schedules. Our customer base includes more than 175 accounts in 28 states, exporting to Mexico and Canada.</p>
+          </div>
+          <div class="contact-info">
+            <h3>Visit Us</h3>
+            <div class="contact-info__item">
+              <div class="contact-info__icon" aria-hidden="true">&#9873;</div>
+              <div class="contact-info__detail">
+                <h4>Address</h4>
+                <p>1451 Stonebraker Drive<br>Kendallville, Indiana 46755</p>
+              </div>
+            </div>
+            <div class="contact-info__item">
+              <div class="contact-info__icon" aria-hidden="true">&#9742;</div>
+              <div class="contact-info__detail">
+                <h4>Phone</h4>
+                <p><a href="tel:+12603473325">(260) 347-3325</a></p>
+              </div>
+            </div>
+            <div class="contact-info__item">
+              <div class="contact-info__icon" aria-hidden="true">&#9993;</div>
+              <div class="contact-info__detail">
+                <h4>Fax</h4>
+                <p>(260) 347-3449</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CTA BANNER ========== -->
+    <section class="cta-banner">
+      <div class="container">
+        <h2>Ready to Get Started?</h2>
+        <p>Contact Charmaran today for a quick, competitive quote. We look forward to working with you.</p>
+        <div class="cta-banner__actions">
+          <a href="quote.html" class="btn btn--primary btn--lg">Request a Quote</a>
+          <a href="tel:+12603473325" class="cta-banner__phone">(260) 347-3325</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer__brand">
+          <div class="footer__brand-name">Charmaran Company</div>
+          <p class="footer__brand-tagline">Precision metal stamping, non-metal stamping, and die cutting since 1970. From short runs to millions &mdash; three processes under one roof.</p>
+        </div>
+        <div>
+          <h4 class="footer__heading">Services</h4>
+          <ul class="footer__links">
+            <li><a href="metal-stamping.html">Metal Stamping</a></li>
+            <li><a href="non-metal-stamping.html">Non-Metal Stamping</a></li>
+            <li><a href="die-cutting.html">Die Cutting</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Company</h4>
+          <ul class="footer__links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="equipment.html">Equipment</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="quote.html">Request a Quote</a></li>
+          </ul>
+        </div>
+        <div class="footer__contact">
+          <h4 class="footer__heading">Contact Us</h4>
+          <p>1451 Stonebraker Drive<br>Kendallville, Indiana 46755</p>
+          <p>Phone: <a href="tel:+12603473325">(260) 347-3325</a></p>
+          <p>Fax: (260) 347-3449</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 Charmaran Company. All Rights Reserved.</span>
+        <span>Precision Stamping Since 1970</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request a Quote | Charmaran Company</title>
+  <meta name="description" content="Request a quote from Charmaran Company for metal stamping, non-metal stamping, or die cutting services. Quick, competitive quotes for any run size.">
+  <meta name="keywords" content="request quote, metal stamping quote, die cutting quote, RFQ, Charmaran Company, custom stamping quote">
+  <meta property="og:title" content="Request a Quote | Charmaran Company">
+  <meta property="og:description" content="Get a quick, competitive quote for your metal stamping, non-metal stamping, or die cutting project.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- ========== HEADER / NAVIGATION ========== -->
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html" class="nav__brand">
+        <img src="images/charmaran-logo.svg" alt="The Charmaran Company Logo">
+      </a>
+      <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false" onclick="document.querySelector('.nav__links').classList.toggle('nav__links--open'); this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') === 'false' ? 'true' : 'false');">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav__links">
+        <a href="index.html" class="nav__link">Home</a>
+        <div class="nav__dropdown">
+          <span class="nav__link nav__dropdown-toggle" onclick="this.parentElement.classList.toggle('open')">Services</span>
+          <div class="nav__dropdown-menu">
+            <a href="metal-stamping.html" class="nav__dropdown-item">Metal Stamping</a>
+            <a href="non-metal-stamping.html" class="nav__dropdown-item">Non-Metal Stamping</a>
+            <a href="die-cutting.html" class="nav__dropdown-item">Die Cutting</a>
+          </div>
+        </div>
+        <a href="about.html" class="nav__link">About</a>
+        <a href="equipment.html" class="nav__link">Equipment</a>
+        <a href="contact.html" class="nav__link">Contact</a>
+        <a href="quote.html" class="btn btn--primary nav__cta">Request a Quote</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ========== PAGE HERO ========== -->
+    <section class="hero hero--page">
+      <div class="container">
+        <h1>Request a Quote</h1>
+        <p class="hero__subtitle">Tell us about your project and we'll provide a quick, competitive quote.</p>
+      </div>
+    </section>
+
+    <!-- ========== QUOTE FORM ========== -->
+    <section class="section">
+      <div class="container">
+        <div class="content-two-col">
+          <div>
+            <form action="Thankyou.html" method="GET">
+              <div class="form-row form-row--2">
+                <div class="form-group">
+                  <label for="name">Your Name *</label>
+                  <input type="text" id="name" name="name" required placeholder="Full name">
+                </div>
+                <div class="form-group">
+                  <label for="company">Company Name</label>
+                  <input type="text" id="company" name="company" placeholder="Company name">
+                </div>
+              </div>
+
+              <div class="form-row form-row--2">
+                <div class="form-group">
+                  <label for="email">Email Address *</label>
+                  <input type="email" id="email" name="email" required placeholder="email@company.com">
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" placeholder="(260) 555-0100">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="service">Service Needed</label>
+                <select id="service" name="service">
+                  <option value="">Select a service...</option>
+                  <option value="metal-stamping">Metal Stamping</option>
+                  <option value="non-metal-stamping">Non-Metal Stamping</option>
+                  <option value="die-cutting">Die Cutting</option>
+                  <option value="multiple">Multiple Services</option>
+                  <option value="other">Other / Not Sure</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="quantity">Estimated Quantity</label>
+                <input type="text" id="quantity" name="quantity" placeholder="e.g., 500 pieces, 10,000/month, prototype">
+              </div>
+
+              <div class="form-group">
+                <label for="description">Part Description / Requirements *</label>
+                <textarea id="description" name="description" required placeholder="Please describe your part, material requirements, tolerances, and any other specifications. Include dimensions if possible."></textarea>
+              </div>
+
+              <div class="form-group">
+                <label for="notes">Additional Notes</label>
+                <textarea id="notes" name="notes" placeholder="Any additional information, timeline requirements, or questions." style="min-height: 80px;"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--lg">Submit Quote Request</button>
+            </form>
+          </div>
+
+          <!-- Sidebar -->
+          <div>
+            <div class="contact-info">
+              <h3>Other Ways to Reach Us</h3>
+
+              <div class="contact-info__item">
+                <div class="contact-info__icon" aria-hidden="true">&#9742;</div>
+                <div class="contact-info__detail">
+                  <h4>Call Us</h4>
+                  <p><a href="tel:+12603473325">(260) 347-3325</a></p>
+                </div>
+              </div>
+
+              <div class="contact-info__item">
+                <div class="contact-info__icon" aria-hidden="true">&#9993;</div>
+                <div class="contact-info__detail">
+                  <h4>Fax Your Requirements</h4>
+                  <p>(260) 347-3449</p>
+                  <p class="text-sm" style="margin-top: var(--space-1);">Send prints and specs directly via fax for a fast quote.</p>
+                </div>
+              </div>
+
+              <div class="contact-info__item">
+                <div class="contact-info__icon" aria-hidden="true">&#9873;</div>
+                <div class="contact-info__detail">
+                  <h4>Visit Us</h4>
+                  <p>1451 Stonebraker Drive<br>Kendallville, IN 46755</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-info" style="margin-top: var(--space-6);">
+              <h3>What to Include</h3>
+              <p class="text-sm">For the most accurate quote, please provide:</p>
+              <ul class="feature-list" style="margin-top: var(--space-3);">
+                <li class="feature-list__item">Part dimensions and tolerances</li>
+                <li class="feature-list__item">Material type and thickness</li>
+                <li class="feature-list__item">Estimated annual quantity</li>
+                <li class="feature-list__item">Prints or drawings (if available, fax to us)</li>
+                <li class="feature-list__item">Any special requirements</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer__brand">
+          <div class="footer__brand-name">Charmaran Company</div>
+          <p class="footer__brand-tagline">Precision metal stamping, non-metal stamping, and die cutting since 1970. From short runs to millions &mdash; three processes under one roof.</p>
+        </div>
+        <div>
+          <h4 class="footer__heading">Services</h4>
+          <ul class="footer__links">
+            <li><a href="metal-stamping.html">Metal Stamping</a></li>
+            <li><a href="non-metal-stamping.html">Non-Metal Stamping</a></li>
+            <li><a href="die-cutting.html">Die Cutting</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Company</h4>
+          <ul class="footer__links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="equipment.html">Equipment</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="quote.html">Request a Quote</a></li>
+          </ul>
+        </div>
+        <div class="footer__contact">
+          <h4 class="footer__heading">Contact Us</h4>
+          <p>1451 Stonebraker Drive<br>Kendallville, Indiana 46755</p>
+          <p>Phone: <a href="tel:+12603473325">(260) 347-3325</a></p>
+          <p>Fax: (260) 347-3449</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 Charmaran Company. All Rights Reserved.</span>
+        <span>Precision Stamping Since 1970</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

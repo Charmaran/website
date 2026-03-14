@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 100" width="320" height="100">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&amp;family=Inter:wght@400;700&amp;display=swap');
+    </style>
+  </defs>
+  <!-- Background -->
+  <rect width="320" height="100" rx="6" fill="#00BCD4"/>
+  <!-- "The" text -->
+  <text x="24" y="32" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#004D56" letter-spacing="0.5">The</text>
+  <!-- "Charmaran" script text -->
+  <text x="28" y="68" font-family="'Dancing Script', 'Brush Script MT', 'Segoe Script', cursive" font-size="46" font-weight="700" fill="#FFFFFF" letter-spacing="0.5">Charmaran</text>
+  <!-- "COMPANY" text -->
+  <text x="196" y="92" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="700" fill="#004D56" letter-spacing="3">COMPANY</text>
+</svg>
